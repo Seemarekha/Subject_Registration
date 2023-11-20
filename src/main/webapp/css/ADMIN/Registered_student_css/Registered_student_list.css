@@ -1,0 +1,64 @@
+@charset "ISO-8859-1";
+
+body {
+      background-color: cyan;
+      margin: 0;
+      padding: 0;
+    }
+    
+    /* Style the header and table */
+    h1 {
+      text-align: center;
+      margin-top: 20px;
+    }
+    
+    table {
+      border: 3px solid pink;
+      width: 80%; /* Reduced the table width */
+      border-collapse: collapse;
+      margin: 20px auto;
+      background-color: white; /* Background color for the table */
+    }
+    
+    th, td {
+      border: 1px solid pink;
+      padding: 10px; /* Increased cell padding for better spacing */
+      text-align: center;
+    }
+    
+    /* Style the buttons */
+    .btn {
+      padding: 8px 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      margin: 2px 2px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-weight: bold;
+      width: 70px;
+      margin-bottom: 5px;
+    }
+    
+    .edit-btn {
+      background-color: #4CAF50; /* Green */
+    
+    }
+    
+    .delete-btn {
+      background-color: #f44336; /* Red */
+     
+    }
+    
+    .action-cell {
+      background-color: #f0f0f0; /* Light gray background for the action column */
+    }
+    
+    /* Center the buttons within the action cell */
+    .action-cell .btn {
+      display: block;
+      margin: 5px auto;
+    }
