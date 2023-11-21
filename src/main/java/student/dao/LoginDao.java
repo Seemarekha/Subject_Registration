@@ -16,7 +16,7 @@ public class LoginDao {
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		return DriverManager.getConnection("jdbc:mysql://localhost:3306/online_examination_system","root","root");
 	}
-	public Regd_Login checkLogin(String Registration, String Password) throws SQLException
+	public Regd_Login checkLogin(String regd_no, String password) throws SQLException
 	{
 
 		Connection con =null ;
@@ -25,8 +25,8 @@ public class LoginDao {
 		try {
 			con = LoginDao.getConnection();
 			PreparedStatement prd= con.prepareStatement(" Select u.regd_no,u.std_name From std_regd u Join std_login l on u.regd_no=l.regd_no  where l.regd_no=? and l.password=?");
-			prd.setString(1, Registration);
-			prd.setString(2,Password);
+			prd.setString(1, regd_no);
+			prd.setString(2,password);
 
 			rs = prd.executeQuery(); 
 			 

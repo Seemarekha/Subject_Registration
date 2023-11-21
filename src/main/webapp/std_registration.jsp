@@ -34,35 +34,35 @@
 							<div class="form-group">
 								<label for="name"><i
 									class="zmdi zmdi-account material-icons-name"></i></label> <input
-									type="text" name="Name" id="name" placeholder="User Name" required="required"/>
+									type="text" name="std_name" id="name" placeholder="User Name" required="required"/>
 							</div>
 							<div class="form-group">
 								<label for="registration_no.">
 									<i class="zmdi zmdi-file-text"></i>	</label>
-								<input type="number" name="Registration" id="registration" placeholder="Your registration no." required="required"/>
+								<input type="number" name="regd_no" id="registration" placeholder="Your registration no." required="required"/>
 							</div>
 							<div class="form-group">
 								<label for="email"><i class="zmdi zmdi-email"></i></label>
-								 <input type="email" name="Email" id="email" placeholder="Your Email" required="required"/>
+								 <input type="email" name="email" id="email" placeholder="Your Email" required="required"/>
 							</div>
 							<div class="form-group">
 								<label for="pass"><i class="zmdi zmdi-lock"></i></label> <input
-									type="password" name="Password" id="pass" placeholder="Password" required="required"/>
+									type="password" name="password" id="pass" placeholder="Password" required="required"/>
 							</div>
 							<div class="form-group">
 								<label for="re-pass"><i class="zmdi zmdi-lock"></i></label>
-								<input type="password" name="ConfirmPassword" id="con_pass"
+								<input type="password" name="confirmpassword" id="con_pass"
 									placeholder="Confirm password" required="required"/>
 							</div>
 							<div class="form-group">
 								<label for="contact"><i class="zmdi zmdi-phone"></i></label>
-								<input type="text" name="Contact" id="contact"
+								<input type="text" name="contact_no" id="contact"
 									placeholder="Contact no" required="required"/>
 							</div>
 							
 							<div class="form-group">
 								<label for="AcademicYear"><i class="zmdi zmdi-graduation-cap"></i></label>
-								<input type="text" name="AcademicYear" id="AcademicYear"
+								<input type="text" name="academic_year" id="AcademicYear"
 									placeholder="Academic Year" required="required"/>
 							</div>
 

@@ -4,6 +4,8 @@ public class Student_Sub_Regd {
 	public String Course_code;
 	public String Course_Name;
 	public String Credit;
+	
+	
 	public String getCourse_code() {
 		return Course_code;
 	}

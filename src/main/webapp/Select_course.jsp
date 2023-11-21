@@ -1,4 +1,6 @@
+<%@page  import = "java.util.List" %>
 <%@page import="student.model.*"%>
+<%@page import="java.util.Iterator" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -51,23 +53,76 @@
         <ul>
           <div>
           <li>School : SOET</li>
-          <li> &nbsp; &nbsp;&nbsp;&nbsp; Registration No. : </li>
-          <li>Student Name :</li>  
+          <li>Registration No. : <%=session.getAttribute("id") %></li>
+          <li>Student Name : <%=session.getAttribute("name") %></li>  
           </div>
           
         </ul>
         <ul>
           <div>
             <li>Programe : MCA</li>
-          <li>Academic Year &nbsp;: </li>
-          <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Semester &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 1 </li>
+          <li>Academic Year &nbsp;: <%=session.getAttribute("academic_year") %></li>
+          <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Semester &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <%=session.getAttribute("sem") %> </li>
           </div>
           
         </ul>
-    </main>
-    </div>
-    </div>
+    <br><br><br>
+    
+  <div class="table" align="center">
+  <h1>Select Your Subjects</h1>
+  
 
+
+<%
+  HttpSession session1=request.getSession();
+List<Student_Sub_Regd>  semester = (List<Student_Sub_Regd> )session1.getAttribute("semester");
+ %>
+ 
+<table border="1">
+  <tr>
+    <th>Course_Code</th>
+    <th>Course_Name</th>
+    <th>Credit</th>
+ 
+  </tr>
+  
+   <% 
+   
+   if (semester != null) {
+   Iterator<Student_Sub_Regd> iterator = semester.iterator();
+   while (iterator.hasNext()) {
+	   Student_Sub_Regd std = iterator.next();
+
+
+     %> 
+     <tr>
+      <td><%= std.getCourse_code() %></td>
+      <td><%= std.getCourse_Name() %></td>
+      <td><%= std.getCredit() %></td>
+  </tr>
+  <% 
+    }
+} else {
+    out.println("Course is null. Check your servlet code.");
+}
+%>
+
+
+  
+</table><br><br>
+<button type="button" class="btn-success" onclick="registerButtonClicked()">Register</button>
+
+<script>
+function registerButtonClicked() {
+    console.log("Button clicked!");
+    window.location.href = 'sucess.jsp';
+}
+</script>
+
+</div>
+</main>
+</div>
+</div>
 </head>
 
 

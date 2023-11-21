@@ -6,7 +6,7 @@
 <meta charset="ISO-8859-1">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Form</title>
-    <link rel="stylesheet" href="css/HOME/Contact_css/sucess.css" />
+    <link rel="stylesheet" href="css/STUDENT/RegdSuccess/success.css" />
     <script
       src="https://kit.fontawesome.com/64d58efce2.js"
       crossorigin="anonymous"
@@ -18,7 +18,7 @@
       <span class="big-circle"></span>
       <div class="form">
         <div class="contact-info">
-          <h3 class="title"><b>Message Succesfully Send...</b></h3>
+          <h3 class="title"><b>Subject Registered Successfully.........</b></h3>
         </div>
       </div>
     </div>

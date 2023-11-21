@@ -13,35 +13,41 @@
     ></script>
   </head>
   <body>
-    <form action="<%=request.getContextPath() %>/Std_Sub_Regd" method="get">
+    <form action="Std_Sub_Regd_Servlet" method="get">
     <div class="container">
         <div class="contact-form">
           <form action="index.jsp" autocomplete="off">
             <h3 class="title">Registration for Subject</h3>
             <div class="input-container">
-              <input type="text" name="name" class="input" required="required" />
+              <input type="text" name="std_name" class="input" required="required" />
               <label for="name">Full Name</label>
               <span>Full Name</span>
             </div>
             
             <div class="input-container">
-              <input type="number" name="email" class="input" required="required" />
+              <input type="number" name="regd_no" class="input" required="required" />
               <label for="email">Registration No</label>
               <span>Registration No</span>
             </div>
             <div class="input-container">
-              <select name="sem" id="sem" class="input">
+              <select name="semester" id="sem" class="input">
                 <option value="blank"></option>
-                  <option value="first">first</option>
-                  <option value="second">second</option>
-                  <option value="third">third</option>
-                  <option value="fourth">fourth</option>
+                  <option value="f">first</option>
+                  <option value="ss">second</option>
+                  <option value="ttt">third(ST)</option>
+                  <option value="tttt">third(ML)</option>
+                  <option value="ttttt">third(Cloud)</option>
+                  <option value="tttttt">third(AR/VR)</option>
+                  <option value="fffffff">fourth(ST)</option>
+                  <option value="ffffffff">fourth(ML)</option>
+                  <option value="fffffffff">fourth(Cloud)</option>
+                  <option value="ffffffffff">fourth(AR/VR)</option>
                 </select>
               <label for="sem">Semester</label>
               <span>Semester</span>
             </div>
             <div class="input-container">
-                <select name="aca" id="aca" class="input">
+                <select name="academic_year" id="aca" class="input">
                   <option value="blank"></option>
                     <option value="24">2022-2024</option>
                     <option value="25">2023-2025</option>

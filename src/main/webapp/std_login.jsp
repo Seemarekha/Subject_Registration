@@ -37,11 +37,11 @@
 							<div class="form-group">
 								<label for="registration_no.">
 									<i class="zmdi zmdi-file-text"></i>	</label>
-								<input type="number" name="Registration" id="registration" placeholder="Your registration no." required="required"/>
+								<input type="number" name="regd_no" id="registration" placeholder="Your registration no." required="required"/>
 							</div>
 							<div class="form-group">
 								<label for="password"><i class="zmdi zmdi-lock"></i></label> <input
-									type="password" name="Password" id="password"
+									type="password" name="password" id="password"
 									placeholder="Password" required="required"/>
 							</div>
 							 <div class="form-group">

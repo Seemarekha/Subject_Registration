@@ -49,13 +49,31 @@ public class Regd_Login {
 	}
 	private String confirmpassword;
 	private String contact_no;
+	private String semester;
 	private String academic_year;
+	
+	public String getSemester() {
+		return semester;
+	}
+	public void setSemester(String semester) {
+		this.semester = semester;
+	}
 	@Override
 	public String toString() {
 		return "Regd_Login [std_name=" + std_name + ", regd_no=" + regd_no + ", email=" + email + ", password="
-				+ password + ", confirmpassword=" + confirmpassword + ", contact_no=" + contact_no + ", academic_year="
-				+ academic_year + "]";
+				+ password + ", confirmpassword=" + confirmpassword + ", contact_no=" + contact_no + ", semester="
+				+ semester + ", academic_year=" + academic_year + "]";
 	}
-	
+	public Regd_Login(String std_name, String regd_no, String semester, String academic_year) {
+		super();
+		this.std_name = std_name;
+		this.regd_no = regd_no;
+		this.semester = semester;
+		this.academic_year = academic_year;
+	}
+	public Regd_Login() {
+		super();
+	}
+
 	
 }
